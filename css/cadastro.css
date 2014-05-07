@@ -1,0 +1,167 @@
+/*_____________Início do Estilo Geral__________________________________________*/
+html,body {
+height:100%;
+text-align:center;
+font-family:Arial,Tahoma, Helvetica, Sans-serif;
+font-size:0.9em;
+color:#000;
+margin:0;
+padding:0;
+
+}
+
+a:link {
+text-decoration:none;
+cursor:pointer !important;
+}
+
+
+a:hover {
+text-decoration:underline;
+}
+
+img {
+border:0;
+}
+
+form[action="#"] !important {
+	position:relative;
+	width: 746px;
+	border:0px solid blue;
+	left:-16px;
+	margin:0;
+	padding:0;
+}
+
+
+input[type="text"] {
+position:relative;
+margin-bottom:10px;
+width: 200px;
+height:20px ;
+margin: 0 0 10px 10px !important;
+
+}
+
+label, #radios {
+	position:relative;
+	text-align: right;
+	width:115px;
+	float:left;
+	padding:4px 0 0 0;
+	border:0px solid #ccc;
+}
+
+#proprietarioNome { margin-top:5px !important; }
+
+#logradouroCod { padding:5px; }
+
+
+
+#divLogradouroCod {
+	position:relative;
+	float:left;
+	text-align: right;
+	}
+
+
+#divLogradouroNome {height:220px; }
+
+#divVeiculoGaragem { height: 30px; }
+
+#logradouroCod, #logradouroBairro {
+	position:relative;
+	text-align: left;
+	border:1px solid #ccc;
+	margin: 0 0 10px 10px;
+	width: 180px;
+}
+
+#logradouroTipoEndereco {
+	position:relative;
+	text-align: right;
+	margin: 10px 60px 20px 0;
+}
+
+#divErros {
+}
+
+#divMensagens {
+}
+
+#abre {	
+    padding:5px;
+	font-size:1.3em;
+	margin:0 0 30px 0;
+}	
+
+.verde { 
+   	margin: 0 0 10px 0;
+	text-align: left; 	
+	padding:5px;
+	font-size:1.3em;
+    background: #a1f2a3; 
+    text-align: left; 
+}
+
+.amarelo { 
+   	margin: 0 0 10px 0;	
+	text-align: left; 	
+	padding:5px;
+	font-size:1.3em;
+    background: #fdff87; 
+}
+
+.vermelho { 
+	margin: 0 0 10px 0;	
+	text-align: left; 	
+	padding:5px;
+	font-size:1.3em;
+    background: #f2afa1; 
+}
+
+.verde ul, .amarelo ul, .vermelho ul {list-style: none; padding:0 0 0 10px;}
+
+#pessoas {
+	position: relative;
+	border:0px solid red;	
+	width:350px;
+ 	float:right;
+	margin:0 30px 0 0px;
+	z-index:10;
+}
+
+#veiculos {
+	position: relative;
+	border:0px solid green;
+	width:345px;
+	float:left;
+	text-align: left;
+	margin:0;
+	padding:10px 10px 0 10px;
+	background:#ccc;
+	z-index: 1;
+}
+
+#divVeiculosContainer {   margin:0 0 10px 0;   }
+
+#botoes {
+	position:relative;
+	clear:both;
+	width:70%;
+	text-align: left;
+
+	padding:20px 0 20px 0;
+}
+
+#veiculoPlaca, #veiculoMarca, #veiculoModelo, #veiculoAno, #veiculoCor {width: 95px;}
+
+#veiculoCodRenavam {width: 125px;}
+
+.outros {
+width: 745px !important;
+margin-left: 0 !important;
+border: 0px solid red;
+}
+
+#ui-dialog-content #ui-widget-content ul {  text-align: left;  }

@@ -1,0 +1,1643 @@
+/* 
+
+============ Cor coluna direita =============
+
+- cor do fundo do campo de perfil #bce2e2
+- cor da borda do campo de perfil e do painel que desce #46a4b8
+- imagem da seta para baixo url("../images/botoes/perfil_seta_azul.gif")
+- cor dos tipos do menu que desce do perfil #143B44 
+- cor do background do menu que desce do perfil #4796a5 
+
+*/
+
+
+/* caixa do escolha um perfil */
+.coluna_perfil { 
+	background-color: #D6F1AA;
+	border:1px solid #B3C593;
+	}	
+	
+/* quem é você? escolha um perfil*/	
+#btn-menu8 {
+	/*imagem seta para baixo, tem de arrumar o estado clicado na programação para direicionar para imagem correta*/
+	background: url("../../proweb3_sites/images/botoes/perfil_seta_verde.png") no-repeat; 
+	border:0px solid #B3C593;
+	}
+	
+/* painel que desce do escolha um perfil*/
+.panelh {
+	border: 2px solid #8DA871;
+	background-color: #FFF;
+	}
+
+.panelh ul li a{
+	color: #2E3724;
+	}
+
+.panelh ul li a:hover {
+	background-color: #2E3724;
+	color: #FFF;
+	}
+	
+
+
+/* conteudo das colunas da home page _________________________________________________________________ */
+
+#conteudo_home {	
+	position:relative;
+	float:left;
+	width:auto;
+	height:auto;
+	margin: 0;
+	}
+
+/* estilos PAINEL DESTAQUE    _______________________________________________________________ */
+
+#destaques {
+	position:relative;
+	float:right;
+	border: 0px solid blue;
+	z-index:1;
+	}
+	
+#destaques ul {
+	width:auto;
+	margin:10px;
+	border:0 solid red;
+	}
+
+#destaques li {  
+
+            display:inline;
+            font-family:Arial, Verdana, Helvetica, sans-serif;
+            font-size: 0.9em;
+            font-weight:bold;
+            text-align:center;
+            } 
+
+#destaques li a {
+
+            display:inline;
+            padding:5px 10px 5px 10px;
+            text-decoration:none;
+            background:#000;
+            color:#FFF;
+} 
+
+#destaques li a:hover {
+	
+
+  background:#FFF;
+  color: #808080;
+}
+
+#destaques li a.selected {
+
+  background: #808080;
+  color:#FFF;
+}
+
+.a1_tag_turista {
+            position: relative;
+            background-color:#7f0f57;
+            padding:9px;
+            margin:0;
+            color: #fff;
+            top:30px;
+            }
+
+.a1_tag_turista a:link, .a1_tag_turista a:visited, .a1_tag_turista a:active, .a1_tag_turista a:hover {
+            color: #fff;
+            }
+            
+         
+
+/* estilo dos links dos titulos e das tags do painel de imagens do cabeçalho */
+
+.titulo_cabecalho {
+			position: absolute;
+            width:auto;
+			right: 0; 
+			bottom: 0; 
+			left: 0;
+			margin-bottom: 10px;
+			*margin-bottom: -10px;
+		    font-weight:bold;			
+  			}
+
+.titulo_cabecalho h1 a:link, .titulo_cabecalho h1 a:visited, .titulo_cabecalho h1 a:active 
+			{
+            text-decoration: none;
+            color: #fff;
+            z-index:99999;
+            padding: 10px 15px 10px 15px;
+            margin: 0;
+            text-align:left;
+            float:left;
+			background-image: url(../../proweb3_sites/images/fundos/bg_painel_perfil_home2.png);
+			background-repeat: repeat-x;
+            /*line-height: 47px;*/
+            width:auto;
+            
+            }
+            
+.titulo_cabecalho h1 a:hover 
+			{
+            text-decoration: underline;
+            color: #fff;
+			background-image: url(../../proweb3_sites/images/fundos/bg_painel_perfil_home2.png);
+			background-repeat: repeat-x;
+			z-index:99999;
+	        padding: 10px 15px 10px 15px;
+	        margin: 0;
+	        text-align:left;
+	        /*line-height: 47px;*/
+	        width:auto;
+	        
+	        }                                                                                            
+
+.titulo_cabecalho span a:link, .titulo_cabecalho span a:visited, .titulo_cabecalho span a:active {
+            text-decoration: none;
+            text-transform:none;
+            color: #fff;
+			position:relative;
+            font-family:Arial, Verdana, Helvetica, sans-serif;
+            font-size:1em;
+            font-weight:bold;
+            padding: 10px 15px 10px 15px;
+			background-image: url(../../proweb3_sites/images/fundos/bg_painel_perfil_home.png);      
+            }
+
+.titulo_cabecalho span a:hover 
+			{
+            text-decoration: underline;
+            text-transform:none;
+            color: #fff;
+ 			position:relative;
+            font-family:Arial, Verdana, Helvetica, sans-serif;
+            font-size:1em;
+            font-weight:bold;
+            background-image: url(../../proweb3_sites/images/fundos/bg_painel_perfil_home.png);
+            }	
+
+
+#message {
+  margin:10px auto;
+  border:6px solid #222;
+  width:240px;
+  height:40px;
+  background:#0D0D0D;
+  font-size:1.3em;
+  line-height:2em;
+  color:#FC4;
+}
+
+
+#tab_destaques {
+	position:relative;
+	margin:30px 0 50px 0;
+	width: 745px;
+	height:210px;
+	border:0px solid red;
+	z-index:3;
+	}
+ 
+.marginal { 
+	position:absolute;
+	width: 745px;
+	height:210px;
+	border:0px solid blue;
+	}
+	
+
+/*  colunas dinamicas de perfis   _______________________________________________________________    */
+
+#menu_coluna {	
+	position:relative;
+	clear:both;
+	width: 750px;
+	height: 45px;
+	margin: 37px 0 0 0;
+	padding: 0 0 0 0;
+	background-color:transparent;	
+	border: 0 solid #333;
+	z-index:5;		
+	}
+
+#menu_coluna a:link, #menu_coluna a:visited, #menu_coluna a:active, #menu_coluna a:hover {cursor:pointer;}
+
+.colunas { 
+	position:relative;
+	float:left;
+	width:249px;
+	height: 45px;
+	margin: 0;	
+	}
+
+#coluna_empreendedor {
+	position:relative;
+	float:left;
+	width:249px;
+	margin: 0 0 44px 0;
+	_margin: -3px 0 44px 0;	
+	border: 0 solid #333;
+	font-weight:bold; 
+	font-family:arial,verdana,helvetica,sans-serif;
+	}
+
+img#coluna_empreendedor_img {z-index:0; width:227px; max-width:227px; min-width:227px; height: 160px; max-height:160px; min-height:160px;}
+
+#coluna_empreendedor h2 {
+	position:relative;
+	font-size:1.4em;
+	width: 227px;
+	height:70px;
+	_height:90px;
+	margin: 20px 0 0 0;
+	padding: 0 0 20px 0;
+	overflow:hidden;
+	border-bottom:1px solid #cde2ef;
+	}
+	
+#coluna_empreendedor h3 {
+	position:relative;
+	font-size:1.1em;
+	width: 227px;
+	height:35px;
+	_height:60px;
+	margin: 23px 0 0 0;
+	padding: 0 0 23px 0;
+	overflow:hidden;
+	border-bottom:1px solid #cde2ef;
+	}
+
+#coluna_empreendedor h2 a:link,#coluna_empreendedor h2 a:visited, #coluna_empreendedor h2 a:active, #coluna_empreendedor h3 a:link, #coluna_empreendedor h3 a:visited, #coluna_empreendedor h3 a:active {
+	color:#036cad;
+}
+
+#coluna_turista {
+	position:relative;
+	float:left;
+	width:249px;
+	margin: 0 0 44px 0;
+	_margin: -3px 0 44px 0;
+	border: 0 solid #333;
+	font-weight:bold; 
+	font-family:arial,verdana,helvetica,sans-serif;
+	}
+
+img#coluna_turista_img {z-index:0; width:227px; max-width:227px; min-width:227px; height: 160px; max-height:160px; min-height:160px;}
+
+#coluna_turista h2 {
+	position:relative;
+	font-size:1.4em;
+	width: 227px;
+	height:70px;
+	_height:90px;
+	margin: 20px 0 0 0;
+	padding: 0 0 20px 0;
+	overflow:hidden;
+	border-bottom:1px solid #e5cfde;
+	}
+	
+#coluna_turista h3 {
+	position:relative;
+	font-size:1.1em;
+	width: 227px;
+	height:35px;
+	_height:60px;
+	margin: 23px 0 0 0;
+	padding: 0 0 23px 0;
+	overflow:hidden;
+	border-bottom:1px solid #e5cfde;
+	}
+
+#coluna_turista h2 a:link,#coluna_turista h2 a:visited, #coluna_turista h2 a:active, #coluna_turista h3 a:link,#coluna_turista h3 a:visited, #coluna_turista h3 a:active {
+	color:#7f1058;
+}
+	
+#coluna_estudante {
+	position:relative;
+	float:left;
+	width:249px;
+	margin: 0 0 44px 0;
+	_margin: -3px 0 44px 0;
+	border: 0 solid #333;
+	font-weight:bold; 
+	font-family:arial,verdana,helvetica,sans-serif;
+	}
+
+img#coluna_estudante_img  {z-index:0; width:227px; max-width:227px; min-width:227px; height: 160px; max-height:160px; min-height:160px;}
+
+
+#coluna_estudante h2 {
+	position:relative;
+	font-size:1.4em;
+	width: 227px;
+	height:70px;
+	_height:90px;
+	margin: 20px 0 0 0;
+	padding: 0 0 20px 0;
+	overflow:hidden;
+	border-bottom:1px solid #d3e8eb;
+	}
+	
+#coluna_estudante h3 {
+	position:relative;
+	font-size:1.1em;
+	width: 227px;
+	height:35px;
+	_height:60px;
+	margin: 23px 0 0 0;
+	padding: 0 0 23px 0;
+	overflow:hidden;
+	border-bottom:1px solid #d3e8eb;
+	}
+
+
+#coluna_estudante h2 a:link,#coluna_estudante h2 a:visited, #coluna_estudante h2 a:active, #coluna_estudante h3 a:link,#coluna_estudante h3 a:visited, #coluna_estudante h3 a:active {
+	color:#007F8C;
+}
+	
+#coluna_cidade {
+	position:relative;
+	float:left;
+	width:249px;
+	margin: 0 0 44px 0;
+	_margin: -3px 0 44px 0;
+	border: 0 solid #333;
+	font-weight:bold; 
+	font-family:arial,verdana,helvetica,sans-serif;
+	}
+
+img#coluna_cidade_img  {z-index:0; width:227px; max-width:227px; min-width:227px; height: 160px; max-height:160px; min-height:160px;}
+
+
+#coluna_cidade h2 {
+	position:relative;
+	font-size:1.4em;
+	width: 227px;
+	height:70px;
+	_height:90px;
+	margin: 20px 0 0 0;
+	padding: 0 0 20px 0;
+	overflow:hidden;
+	border-bottom:1px solid #F8CA14;
+	}
+	
+#coluna_cidade h3 {
+	position:relative;
+	font-size:1.1em;
+	width: 227px;
+	height:35px;
+	_height:60px;
+	margin: 23px 0 0 0;
+	padding: 0 0 23px 0;
+	overflow:hidden;
+	border-bottom:1px solid #F8CA14;
+	}	
+
+#coluna_cidade h2 a:link,#coluna_cidade h2 a:visited, #coluna_cidade h2 a:active, #coluna_cidade h3 a:link,#coluna_cidade h3 a:visited, #coluna_cidade h3 a:active {
+	color:#F8CA14;
+}
+	
+#coluna_cidadao {
+	position:relative;
+	float:left;
+	width:249px;
+	margin: 0 0 44px 0;
+	_margin: -3px 0 44px 0;
+	border: 0 solid #333;
+	font-weight:bold; 
+	font-family:arial,verdana,helvetica,sans-serif;
+	}
+
+img#coluna_cidadao_img  {z-index:0; width:227px; max-width:227px; min-width:227px; height: 160px; max-height:160px; min-height:160px;}
+
+#coluna_cidadao h2 {
+	position:relative;
+	font-size:1.4em;
+	width: 227px;
+	height:70px;
+	_height:90px;
+	margin: 20px 0 0 0;
+	padding: 0 0 20px 0;
+	overflow:hidden;
+	border-bottom:1px solid #FF3D11;
+	}
+	
+#coluna_cidadao h3 {
+	position:relative;
+	font-size:1.1em;
+	width: 227px;
+	height:35px;
+	_height:60px;
+	margin: 23px 0 0 0;
+	padding: 0 0 23px 0;
+	overflow:hidden;
+	border-bottom:1px solid #FF3D11;
+	}
+
+#coluna_cidadao h2 a:link,#coluna_cidadao h2 a:visited, #coluna_cidadao h2 a:active, #coluna_cidadao h3 a:link,#coluna_cidadao h3 a:visited, #coluna_cidadao h3 a:active {
+	color:#FF3D11;
+}
+	
+#coluna_servidor {
+	position:relative;
+	float:left;
+	width:249px;
+	margin: 0 0 44px 0;
+	_margin: -3px 0 44px 0;
+	border: 0 solid #333;
+	font-weight:bold;
+	font-family:arial,verdana,helvetica,sans-serif;
+	}
+
+img#coluna_servidor_img  {z-index:0; width:227px; max-width:227px; min-width:227px; height: 160px; max-height:160px; min-height:160px;}
+
+	
+#coluna_servidor h2 {
+	position:relative;
+	font-size:1.4em;
+	width: 227px;
+	height:70px;
+	_height:90px;
+	margin: 20px 0 0 0;
+	padding: 0 0 20px 0;
+	overflow:hidden;
+	border-bottom:1px solid #23A558;
+	}
+	
+#coluna_servidor h3 {
+	position:relative;
+	font-size:1.1em;
+	width: 227px;
+	height:35px;
+	_height:60px;
+	margin: 23px 0 0 0;
+	padding: 0 0 23px 0;
+	overflow:hidden;
+	border-bottom:1px solid #23A558;
+	}	
+	
+	
+#coluna_servidor h2 a:link,#coluna_servidor h2 a:visited, #coluna_servidor h2 a:active, #coluna_servidor h3 a:link,#coluna_servidor h3 a:visited, #coluna_servidor h3 a:active {
+	color:#23A558;
+}
+
+/*   botões perfis _______________________________________________________________ */
+
+#btn-menu_estudante {
+	background: url("../images/botoes/estudante-arrow.gif") no-repeat;
+	text-align: center;
+	width: 227px;
+	height: 41px;
+	margin: 1px 0 0 0;
+	display:block;
+	color: #05b1c5;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 3px solid #037e8d;
+	vertical-align:middle;
+	font-weight:bold;
+	cursor: pointer !important;
+	}
+	
+#btn-menu_estudante a:link, #btn-menu_estudante a:visited, #btn-menu_estudante a:active, #btn-menu_estudante a:hover {cursor:pointer !important;}	
+	
+#btn-menu_turista {
+	background: url("../images/botoes/turista-arrow.gif") no-repeat;
+	text-align: center;
+	width: 227px;
+	height: 41px;
+	margin: 1px 0 0 0;
+	display:block;
+	color: #05b1c5;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 3px solid #b91a80;
+	vertical-align:middle;
+	font-weight:bold;
+	cursor: pointer !important;	
+}
+
+#btn-menu_turista a:link, #btn-menu_turista a:visited, #btn-menu_turista a:active, #btn-menu_turista a:hover {cursor:pointer !important;}
+
+#btn-menu_empreendedor {
+	background: url("../images/botoes/empreendedor-arrow.gif") no-repeat;
+	text-align: center;
+	width: 227px;
+	height: 41px;
+	margin: 1px 0 0 0;
+	display:block;
+	color: #05b1c5;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 3px solid #0793eb;
+	vertical-align:middle;
+	font-weight:bold;
+	cursor: pointer !important;	
+}
+
+#btn-menu_empreendedor a:link, #btn-menu_empreendedor a:visited, #btn-menu_empreendedor a:active, #btn-menu_empreendedor a:hover {cursor:pointer !important;}
+
+#btn-menu_cidade {
+	background: url("../images/botoes/cidade-arrow.gif") no-repeat;
+	text-align: center;
+	width: 227px;
+	height: 41px;
+	margin: 1px 0 0 0;
+	display:block;
+	color: #05b1c5;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 3px solid #f8ca14;
+	vertical-align:middle;
+	font-weight:bold;
+	cursor: pointer !important;	
+}
+
+#btn-menu_cidade a:link, #btn-menu_cidade a:visited, #btn-menu_cidade a:active, #btn-menu_cidade a:hover {cursor:pointer !important;}
+
+#btn-menu_cidadao {
+	background: url("../images/botoes/cidadao-arrow.gif") no-repeat;
+	text-align: center;
+	width: 227px;
+	height: 41px;
+	margin: 1px 0 0 0;
+	display:block;
+	color: #05b1c5;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 3px solid #ff3d11;
+	vertical-align:middle;
+	font-weight:bold;
+	cursor: pointer !important;	
+}
+
+#btn-menu_cidadao a:link, #btn-menu_cidadao a:visited, #btn-menu_cidadao a:active, #btn-menu_cidadao a:hover {cursor:pointer !important;}
+
+#btn-menu_servidor {
+	background: url("../images/botoes/servidor-arrow.gif") no-repeat;
+	text-align: center;
+	width: 227px;
+	height: 41px;
+	margin: 1px 0 0 0;
+	display:block;
+	color: #05b1c5;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 3px solid #23a558;
+	vertical-align:middle;
+	font-weight:bold;
+	cursor: pointer !important;	
+}
+
+#btn-menu_servidor a:link, #btn-menu_servidor a:visited, #btn-menu_servidor a:active, #btn-menu_servidor a:hover {cursor:pointer !important;}
+
+
+/*   painéis perfis _______________________________________________________________ */
+
+.panel_estudante {
+	position:absolute;
+	background: #ffffff;
+	display: none;
+	clear:both;
+	margin: 0 0 0 0;
+	width:223px;
+	_width:227px; 
+	height: 198px;
+	border-right:2px solid #037e8d;
+	border-bottom:2px solid #037e8d;
+	border-left:2px solid #037e8d;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight:bold;
+	float:left;
+	/*clear:left;*/
+}
+
+.panel_estudante a {
+	width: 208px; 
+	background-color:transparent; 
+	color:#037e8d; 
+	text-decoration:none; 
+	text-align:left; 
+	float:left; 
+	clear:left;
+	padding:0;
+	margin:0;
+	display:block; 
+	padding-left:15px;
+	cursor:pointer !important;
+	}
+
+.panel_estudante a:hover 
+		{
+		width: 208px; 
+		background-color:#037e8d !important;
+		color:white; 
+		text-decoration:none; 
+		text-align:left; 
+		float:left; 
+		clear:left;
+		padding:0;
+		margin:0;
+		display:block; 
+		padding-left:15px;
+		cursor:pointer !important;
+		}
+
+.panel_estudante ul   {
+		width: 223px;
+		height: 198px; 
+		list-style-type:none; 
+		line-height:40px;
+		margin:0;
+		padding:0;
+		display:block;
+		}
+
+.panel_turista {
+	position:absolute;
+	background: #ffffff;
+	display: none;
+	clear:both;
+	margin: 0 0 0 0;
+	width:223px;
+	_width:227px; 
+	height: 198px;
+	border-right:2px solid #b91a80;
+	border-bottom:2px solid #b91a80;
+	border-left:2px solid #b91a80;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight:bold;
+	float:left;
+	/*clear:left;*/
+}
+
+.panel_turista a {
+	width: 208px; 
+	background-color:transparent; 
+	color:#b91a80; 
+	text-decoration:none; 
+	text-align:left; 
+	float:left; 
+	clear:left;
+	padding:0;
+	margin:0;
+	display:block; 
+	padding-left:15px;
+	cursor: pointer !important;
+	}
+
+.panel_turista a:hover 
+		{
+		width: 208px; 
+		background-color:#b91a80; 
+		color:white; 
+		text-decoration:none; 
+		text-align:left; 
+		float:left; 
+		clear:left;
+		padding:0;
+		margin:0;
+		display:block; 
+		padding-left:15px;
+		cursor: pointer !important;
+		}
+
+.panel_turista ul   {
+		width: 223px;
+		height: 198px; 
+		list-style-type:none; 
+		line-height:40px;
+		margin:0;
+		padding:0;
+		display:block;
+		}
+		
+.panel_empreendedor {
+	position:absolute;
+	background: #ffffff;
+	display: none;
+	clear:both;
+	margin: 0 0 0 0;
+	width:223px;
+	_width:227px; 
+	height: 198px;
+	border-right:2px solid #0793eb;
+	border-bottom:2px solid #0793eb;
+	border-left:2px solid #0793eb;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight:bold;
+	float:left;
+	/*clear:left;*/
+}
+
+.panel_empreendedor a {
+	width: 208px; 
+	background-color:transparent; 
+	color:#0793eb; 
+	text-decoration:none; 
+	text-align:left; 
+	float:left; 
+	clear:left;
+	padding:0;
+	margin:0;
+	display:block; 
+	padding-left:15px;
+	cursor:pointer !important;
+	}
+
+.panel_empreendedor a:hover 
+		{
+		width: 208px; 
+		background-color:#0793eb; 
+		color:white; 
+		text-decoration:none; 
+		text-align:left; 
+		float:left; 
+		clear:left;
+		padding:0;
+		margin:0;
+		display:block; 
+		padding-left:15px;
+		cursor:pointer !important;
+		}
+
+.panel_empreendedor ul   {
+		width: 223px;
+		height: 198px; 
+		list-style-type:none; 
+		line-height:40px;
+		margin:0;
+		padding:0;
+		display:block;
+		}
+
+.panel_cidade {
+	position:absolute;
+	background: #ffffff;
+	display: none;
+	clear:both;
+	margin: 0 0 0 0;
+	width:223px;
+	_width:227px; 
+	height: 198px;
+	border-right:2px solid #F8CA14;
+	border-bottom:2px solid #F8CA14;
+	border-left:2px solid #F8CA14;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight:bold;
+	float:left;
+	/*clear:left;*/
+}
+
+.panel_cidade a {
+	width: 208px; 
+	background-color:transparent; 
+	color:#F8CA14; 
+	text-decoration:none; 
+	text-align:left; 
+	float:left; 
+	clear:left;
+	padding:0;
+	margin:0;
+	display:block; 
+	padding-left:15px;
+	cursor:pointer !important;
+	}
+
+.panel_cidade a:hover 
+		{
+		width: 208px; 
+		background-color:#F8CA14; 
+		color:white; 
+		text-decoration:none; 
+		text-align:left; 
+		float:left; 
+		clear:left;
+		padding:0;
+		margin:0;
+		display:block; 
+		padding-left:15px;
+		cursor:pointer !important;
+		}
+
+.panel_cidade ul   {
+		width: 223px;
+		height: 198px; 
+		list-style-type:none; 
+		line-height:40px;
+		margin:0;
+		padding:0;
+		display:block;
+		}
+		
+.panel_cidadao {
+	position:absolute;
+	background: #ffffff;
+	display: none;
+	clear:both;
+	margin: 0 0 0 0;
+	width:223px;
+	_width:227px; 
+	height: 198px;
+	border-right:2px solid #FF3D11;
+	border-bottom:2px solid #FF3D11;
+	border-left:2px solid #FF3D11;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight:bold;
+	float:left;
+	/*clear:left;*/
+}
+
+.panel_cidadao a {
+	width: 208px; 
+	background-color:transparent; 
+	color:#FF3D11; 
+	text-decoration:none; 
+	text-align:left; 
+	float:left; 
+	clear:left;
+	padding:0;
+	margin:0;
+	display:block; 
+	padding-left:15px;
+	cursor: pointer !important;
+	}
+
+.panel_cidadao a:hover 
+		{
+		width: 208px; 
+		background-color:#FF3D11; 
+		color:white; 
+		text-decoration:none; 
+		text-align:left; 
+		float:left; 
+		clear:left;
+		padding:0;
+		margin:0;
+		display:block; 
+		padding-left:15px;
+		cursor: pointer !important;
+		}
+
+.panel_cidadao ul   {
+		width: 223px;
+		height: 198px; 
+		list-style-type:none; 
+		line-height:40px;
+		margin:0;
+		padding:0;
+		display:block;
+		}
+
+.panel_servidor {
+	position:absolute;
+	background: #ffffff;
+	display: none;
+	clear:both;
+	margin: 0 0 0 0;
+	width:223px;
+	_width:227px; 
+	height: 198px;
+	border-right:2px solid #23A558;
+	border-bottom:2px solid #23A558;
+	border-left:2px solid #23A558;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight:bold;
+	float:left;
+	/*clear:left;*/
+}
+
+.panel_servidor a {
+	width: 208px; 
+	background-color:transparent; 
+	color:#23A558; 
+	text-decoration:none; 
+	text-align:left; 
+	float:left; 
+	clear:left;
+	padding:0;
+	margin:0;
+	display:block; 
+	padding-left:15px;
+	cursor: pointer !important;
+	}
+
+.panel_servidor a:hover 
+		{
+		width: 208px; 
+		background-color:#23A558; 
+		color:white; 
+		text-decoration:none; 
+		text-align:left; 
+		float:left; 
+		clear:left;
+		padding:0;
+		margin:0;
+		display:block; 
+		padding-left:15px;
+		cursor: pointer !important;
+		}
+
+.panel_servidor ul   {
+		width: 223px;
+		height: 198px; 
+		list-style-type:none; 
+		line-height:40px;
+		margin:0;
+		padding:0;
+		display:block;
+		}
+
+	
+/*.panel_servidor {
+	position:absolute;
+	background: #ffffff;
+	display: none;
+	clear:both;
+	margin: 0 0 0 0;
+	width:223px;
+	_width:227px; 
+	height: 198px;
+	border-right:2px solid #23A558;
+	border-bottom:2px solid #23A558;
+	border-left:2px solid #23A558;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight:bold;
+	float:left;
+	
+}
+
+.panel_servidor a {
+	width: 208px; 
+	background-color:#fff; 
+	color:#23A558; 
+	text-decoration:none; 
+	text-align:left; 
+	float:left; 
+	clear:left;
+	padding:0;
+	margin:0;
+	display:block; 
+	padding-left:15px;
+	cursor: pointer !important;
+	}
+
+.panel_servidor a:hover 
+		{
+		width: 208px; 
+		background-color:#23A558; 
+		color:white; 
+		text-decoration:none; 
+		text-align:left; 
+		float:left; 
+		clear:left;
+		padding:0;
+		margin:0;
+		display:block; 
+		padding-left:15px;
+		cursor: pointer !important;
+		}
+
+.panel_servidor ul   {
+		width: 223px;
+		height: 198px; 
+		list-style-type:none; 
+		line-height:40px;
+		margin:0;
+		padding:0;
+		display:block;
+		}
+*/
+
+			
+#btn_estudante {
+	position:absolute;
+	margin: 25px 0 0 0;	
+	width:227px;
+	height:41px;
+	background: url(../../proweb3_sites/images/fundos/bg_estudante.gif);
+	background-repeat: repeat-x;
+	text-align:center;
+	
+}
+
+#btn_estudante a:link, #btn_estudante a:visited, #btn_estudante a:active, #btn_estudante a:hover {
+	position:relative;
+	top:12px;
+	color: #fff;
+	font-weight:bold;
+	}
+
+#btn_turista {
+	position:absolute;
+	margin: 25px 0 0 0;
+	width:227px;
+	height:41px;
+	background: url(../../proweb3_sites/images/fundos/bg_turista.gif);
+	background-repeat: repeat-x;
+	text-align:center;
+}
+
+#btn_turista a:link, #btn_turista a:visited, #btn_turista a:active, #btn_turista a:hover {
+	position:relative;
+	top:12px;
+	color: #fff;
+	font-weight:bold;
+	}
+
+#btn_empreendedor {
+	position:relative;
+	margin: 25px 0 0 0;
+	width:227px;
+	height:41px;
+	background: url(../../proweb3_sites/images/fundos/bg_empreendedor.gif);
+	background-repeat: repeat-x;
+	text-align:center;
+}
+
+#btn_empreendedor a:link, #btn_empreendedor a:visited, #btn_empreendedor a:active, #btn_empreendedor a:hover {
+	position:relative;
+	top:12px;
+	color: #fff;
+	font-weight:bold;
+	}
+
+#btn_cidade {
+	position:relative;
+	margin: 25px 0 0 0;
+	width:227px;
+	height:41px;
+	background: url(../../proweb3_sites/images/fundos/bg_cidade.gif);
+	background-repeat: repeat-x;
+	text-align:center;
+}
+
+#btn_cidade a:link, #btn_cidade a:visited, #btn_cidade a:active, #btn_cidade a:hover {
+	position:relative;
+	top:12px;
+	color: #000;
+	font-weight:bold;
+	}
+	
+#btn_cidadao {
+	position:relative;
+	margin: 25px 0 0 0;
+	width:227px;
+	height:41px;
+	background: url(../../proweb3_sites/images/fundos/bg_cidadao.gif);
+	background-repeat: repeat-x;
+	text-align:center;
+}
+
+#btn_cidadao a:link, #btn_cidadao a:visited, #btn_cidadao a:active, #btn_cidadao a:hover {
+	position:relative;
+	top:12px;
+	color: #fff;
+	font-weight:bold;
+}
+
+#btn_servidor {
+	position:relative;
+	margin: 25px 0 0 0;
+	width:227px;
+	height:41px;
+	background: url(../../proweb3_sites/images/fundos/bg_servidor.gif);
+	background-repeat: repeat-x;
+	text-align:center;
+}
+
+#btn_servidor a:link, #btn_servidor a:visited, #btn_servidor a:active, #btn_servidor a:hover {
+	position:relative;
+	top:12px;
+	color: #fff;
+	font-weight:bold;
+}				 			
+				 			
+	
+/* tag de caminho das notícias */
+.caminho {	
+	color: #333;
+	margin: 10px 0 10px 0;
+	font-size: 1em;
+	font-weight: bold;
+	width:235px;
+	max-width:235px;
+	min-width:235px;
+	line-height:15px; 
+	}
+
+
+	
+.data_caixa  { font-size:11px; font-weight:bold; color:#666; border:0px solid black; margin:0;}	
+	
+/* exibição de notícias */
+  #n_resultado {
+	float:right;
+	font-family:Arial, Verdana, Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+	color:#333;
+	margin: 15px 0 0 0;
+	*margin: 10px 0 0 0;
+	*padding: 8px 0;
+	}
+
+.link_resultado  {
+	text-decoration: none;
+	padding: 3px 6px 3px 6px;
+	*padding: 0 6px;
+	margin: 0 0 0 12px;
+	color:#333;
+	font-weight: bold;
+	font-size: 1em;
+	font-family:Arial, Verdana, Helvetica, sans-serif;
+	}
+	
+.link_resultado:hover{
+	text-decoration:none;
+	border: 3px solid #008000 ;
+	padding: 3px 3px 3px 3px;
+	font-family:Arial, Verdana, Helvetica, sans-serif;
+}
+
+
+.link_resultado_ativo {
+	text-decoration: none;
+	padding: 3px 6px 3px 6px;
+	*padding: 0 6px;
+	margin: 0 0 0 12px;
+	color: #008000;
+	font-weight: bold;
+	font-size: 1em;
+	font-family:Arial, Verdana, Helvetica, sans-serif;	
+	}
+	
+.link_resultado_ativo:hover{
+	text-decoration:none;	
+	border: 3px solid #008000;
+	padding: 3px 3px 3px 3px;
+	font-family:Arial, Verdana, Helvetica, sans-serif;
+}
+
+#img_noticia_1 {
+	float:left;
+	width: auto;
+	height: auto;
+	margin-right:10px;
+	border:3px solid #475639;
+	}
+
+#img_noticia_2 {
+	float:left;
+	width: auto;
+	height: auto;
+	margin-right:10px;
+	border: 3px solid #475639;
+	clear:right;
+	}
+
+#noticias
+{
+	height: 455px;
+	overflow: hidden;
+}
+
+        
+	#Abas { position: relative; width: 100%; *z-index:-100; margin-bottom:100px; }
+	#Abas ul {margin:0;  padding:0;}
+	#boxLinks { list-style: none; overflow: hidden;  z-index:1;  }
+	#boxLinks li {  display: inline; }
+	#boxLinks li a { margin:0; padding: 10px 15px; color: black; text-decoration: none; border-left: 0px solid #fff; border-right: 4px solid #fff; float: left; display: block; margin-left: -1px; position: relative; left: 1px; font-size:16px; font-weight:bold; border-bottom: 2px solid #fff; }
+	#boxLinks li a:hover { color: #000; }
+	#boxLinks li a:active { color: #000; }
+	#boxLinks li a:visited { z-index:2; }
+	#paidasabas { 
+		top:0px;
+		border-top: 0px solid #fff; 
+		height: 390px; 
+		overflow: scroll-no; 
+		padding: 0px 0px 0px 0px; 
+		position: relative; 
+		_z-index:-1; 
+		}
+	#paidasabas h3 { font-size:17px; padding:0px 0px 7px 0px; border:0px solid red; margin:0;}
+	#paidasabas h3 a { color:#000; }
+	.box { display: none; height: 250px; overflow: hidden; display: block; position: relative; overflow-x: hidden; }
+	
+	#aba1, #aba2, #aba3 {  width:725px; height: 370px; padding: 20px 0px 0px 20px; }
+	
+	.coraba1 {background: #dbe7d8;}
+	.coraba2 {background: #abd838;}
+	.coraba3 {background: #d9e4f0;}
+	 
+	.box { _display: block;  _z-index:-100;}
+	#box { _overflow: hidden; _position: relative;  _z-index:-100;}
+	
+	.alinha_centro { text-align:center; }
+	
+/* 
+
+============ Topo cor =============
+
+- cor do fundo do campo da busca #BCE2E2;
+- cor da borda do campo da busca #46A4B8
+- cor dos tipos do menu e do estado over dos itens do menu #143B44 
+- cor do background do menu #4796a5 
+- cor da borda do btn buscar #46A4B8
+
+*/
+
+/* inicio da busca do topo  */
+/* fundo da busca*/
+#procura {
+	background-color: #d6f1aa;
+	border: 1px solid #b3c593;
+	}
+
+/* botão buscar */
+#buscar {
+	border: 1px solid #1f5762;
+	}
+
+/* estado do link ativo e o visitado tem de voltar ao estado natural*/
+#menu_topo li a:link, #menu_topo li a:visited{
+	color: #222;
+    }
+
+/* estado mouse em cima (over) */
+#menu_topo li a:hover {
+	color: #FFF;
+	background-color: #36422a;
+
+    }
+
+/* estado clicado, não é visitado*/
+#menu_topo li a:active, #menu_topo li a:focus {
+	background-color: #36422a;
+	color: #FFF;
+	}
+
+/* paineis que descem do menu*/	
+.panela, .panelb, .panelc, .paneld {
+	background: #36422a;
+	}
+
+.panela li a, .panelb li a, .panelc li a, .paneld li a {
+	color: #FFF;
+	}	
+	
+.panela ul li a:hover, .panelb ul li a:hover, .panelc ul li a:hover, .paneld ul li a:hover {
+	color: #FFF;
+	background-color: #000;
+	}	
+
+
+/*
+* jQuery UI CSS Framework
+* Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
+* Dual licensed under the MIT (MIT-LICENSE.txt) and GPL (GPL-LICENSE.txt) licenses.
+*/
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute; left: -99999999px; }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.ui-helper-clearfix { display:block; }
+/* end clearfix */
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled { cursor: default !important; }
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+
+/*
+* jQuery UI CSS Framework
+* Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
+* Dual licensed under the MIT (MIT-LICENSE.txt) and GPL (GPL-LICENSE.txt) licenses.
+* To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=segoe%20ui,%20Arial,%20sans-serif&fwDefault=bold&fsDefault=1.1em&cornerRadius=6px&bgColorHeader=ece8da&bgTextureHeader=12_gloss_wave.png&bgImgOpacityHeader=100&borderColorHeader=d4ccb0&fcHeader=433f38&iconColorHeader=847e71&bgColorContent=f5f3e5&bgTextureContent=04_highlight_hard.png&bgImgOpacityContent=100&borderColorContent=dfd9c3&fcContent=312e25&iconColorContent=808080&bgColorDefault=459e00&bgTextureDefault=04_highlight_hard.png&bgImgOpacityDefault=15&borderColorDefault=327E04&fcDefault=ffffff&iconColorDefault=eeeeee&bgColorHover=67b021&bgTextureHover=03_highlight_soft.png&bgImgOpacityHover=25&borderColorHover=327E04&fcHover=ffffff&iconColorHover=ffffff&bgColorActive=fafaf4&bgTextureActive=04_highlight_hard.png&bgImgOpacityActive=100&borderColorActive=d4ccb0&fcActive=459e00&iconColorActive=8DC262&bgColorHighlight=fcf0ba&bgTextureHighlight=02_glass.png&bgImgOpacityHighlight=55&borderColorHighlight=e8e1b5&fcHighlight=363636&iconColorHighlight=8DC262&bgColorError=ffedad&bgTextureError=03_highlight_soft.png&bgImgOpacityError=95&borderColorError=e3a345&fcError=cd5c0a&iconColorError=cd0a0a&bgColorOverlay=2b2922&bgTextureOverlay=05_inset_soft.png&bgImgOpacityOverlay=15&opacityOverlay=90&bgColorShadow=cccccc&bgTextureShadow=04_highlight_hard.png&bgImgOpacityShadow=95&opacityShadow=20&thicknessShadow=12px&offsetTopShadow=-12px&offsetLeftShadow=-12px&cornerRadiusShadow=10px
+*/
+
+
+/* Component containers
+----------------------------------*/
+.ui-widget { font-family: segoe ui, Arial, sans-serif; font-size: 1.1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: segoe ui, Arial, sans-serif; font-size: 1em; }
+.ui-widget-content { border: 1px solid #dfd9c3; background: #f5f3e5 url(../images/calendario/ui-bg_highlight-hard_100_f5f3e5_1x100.png) 50% top repeat-x; color: #312e25; }
+.ui-widget-content a { color: #312e25; }
+.ui-widget-header { border: 1px solid #d4ccb0; background: #ece8da url(../images/calendario/ui-bg_gloss-wave_100_ece8da_500x100.png) 50% 50% repeat-x; color: #433f38; font-weight: bold; }
+.ui-widget-header a { color: #433f38; }
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default { border: 1px solid #327E04; background: #459e00 url(../images/calendario/ui-bg_highlight-hard_15_459e00_1x100.png) 50% 50% repeat-x; font-weight: bold; color: #ffffff; outline: none; }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #ffffff; text-decoration: none; outline: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus { border: 1px solid #327E04; background: #67b021 url(../images/calendario/ui-bg_highlight-soft_25_67b021_1x100.png) 50% 50% repeat-x; font-weight: bold; color: #ffffff; outline: none; }
+.ui-state-hover a, .ui-state-hover a:hover { color: #ffffff; text-decoration: none; outline: none; }
+.ui-state-active, .ui-widget-content .ui-state-active { border: 1px solid #d4ccb0; background: #fafaf4 url(../images/calendario/ui-bg_highlight-hard_100_fafaf4_1x100.png) 50% 50% repeat-x; font-weight: bold; color: #459e00; outline: none; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #459e00; outline: none; text-decoration: none; }
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight, .ui-widget-content .ui-state-highlight {border: 1px solid #e8e1b5; background: #fcf0ba url(../images/calendario/ui-bg_glass_55_fcf0ba_1x400.png) 50% 50% repeat-x; color: #363636; }
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a { color: #363636; }
+.ui-state-error, .ui-widget-content .ui-state-error {border: 1px solid #e3a345; background: #ffedad url(../images/calendario/ui-bg_highlight-soft_95_ffedad_1x100.png) 50% top repeat-x; color: #cd5c0a; }
+.ui-state-error a, .ui-widget-content .ui-state-error a { color: #cd5c0a; }
+.ui-state-error-text, .ui-widget-content .ui-state-error-text { color: #cd5c0a; }
+.ui-state-disabled, .ui-widget-content .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+.ui-priority-primary, .ui-widget-content .ui-priority-primary { font-weight: bold; }
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon { width: 16px; height: 16px; background-image: url(../images/calendario/ui-icons_808080_256x240.png); }
+.ui-widget-content .ui-icon {background-image: url(../images/calendario/ui-icons_808080_256x240.png); }
+.ui-widget-header .ui-icon {background-image: url(../images/calendario/ui-icons_847e71_256x240.png); }
+.ui-state-default .ui-icon { background-image: url(../images/calendario/ui-icons_eeeeee_256x240.png); }
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {background-image: url(../images/calendario/ui-icons_ffffff_256x240.png); }
+.ui-state-active .ui-icon {background-image: url(../images/calendario/ui-icons_8DC262_256x240.png); }
+.ui-state-highlight .ui-icon {background-image: url(../images/calendario/ui-icons_8DC262_256x240.png); }
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {background-image: url(../images/calendario/ui-icons_cd0a0a_256x240.png); }
+
+/* positioning */
+.ui-icon-circle-triangle-e { background-position: -48px -192px; }
+.ui-icon-circle-triangle-w { background-position: -80px -192px; }
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.ui-corner-tl { -moz-border-radius-topleft: 6px; -webkit-border-top-left-radius: 6px; }
+.ui-corner-tr { -moz-border-radius-topright: 6px; -webkit-border-top-right-radius: 6px; }
+.ui-corner-bl { -moz-border-radius-bottomleft: 6px; -webkit-border-bottom-left-radius: 6px; }
+.ui-corner-br { -moz-border-radius-bottomright: 6px; -webkit-border-bottom-right-radius: 6px; }
+.ui-corner-top { -moz-border-radius-topleft: 6px; -webkit-border-top-left-radius: 6px; -moz-border-radius-topright: 6px; -webkit-border-top-right-radius: 6px; }
+.ui-corner-bottom { -moz-border-radius-bottomleft: 6px; -webkit-border-bottom-left-radius: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-right-radius: 6px; }
+.ui-corner-right {  -moz-border-radius-topright: 6px; -webkit-border-top-right-radius: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-right-radius: 6px; }
+.ui-corner-left { -moz-border-radius-topleft: 6px; -webkit-border-top-left-radius: 6px; -moz-border-radius-bottomleft: 6px; -webkit-border-bottom-left-radius: 6px; }
+.ui-corner-all { -moz-border-radius: 6px; -webkit-border-radius: 6px; }
+
+/* Datepicker
+----------------------------------*/
+.ui-datepicker { width: 15.1em; padding: .2em .2em 0; margin: 10px 0 0 0;}
+.ui-datepicker .ui-datepicker-header { position:relative; padding:.2em 0; }
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position:absolute; top: 2px; width: 1.8em; height: 1.8em; }
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover { top: 1px; }
+.ui-datepicker .ui-datepicker-prev { left:2px; }
+.ui-datepicker .ui-datepicker-next { right:2px; }
+.ui-datepicker .ui-datepicker-prev-hover { left:1px; }
+.ui-datepicker .ui-datepicker-next-hover { right:1px; }
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
+.ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
+.ui-datepicker .ui-datepicker-title select { float:left; font-size:1em; margin:1px 0; }
+.ui-datepicker select.ui-datepicker-month-year {width: 100%;}
+.ui-datepicker select.ui-datepicker-month, 
+.ui-datepicker select.ui-datepicker-year { width: 49%;}
+.ui-datepicker .ui-datepicker-title select.ui-datepicker-year { float: right; }
+.ui-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
+.ui-datepicker th { padding: .7em .3em; text-align: center; font-weight: bold; border: 0;  }
+.ui-datepicker td { border: 0; padding: 1px; }
+.ui-datepicker td span, .ui-datepicker td a { display: block; padding: .2em; text-align: right; text-decoration: none; }
+.ui-datepicker .ui-datepicker-buttonpane { background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
+.ui-datepicker .ui-datepicker-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float:left; }
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi { width:auto; }
+.ui-datepicker-multi .ui-datepicker-group { float:left; }
+.ui-datepicker-multi .ui-datepicker-group table { width:95%; margin:0 auto .4em; }
+.ui-datepicker-multi-2 .ui-datepicker-group { width:50%; }
+.ui-datepicker-multi-3 .ui-datepicker-group { width:33.3%; }
+.ui-datepicker-multi-4 .ui-datepicker-group { width:25%; }
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header { border-left-width:0; }
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header { border-left-width:0; }
+.ui-datepicker-multi .ui-datepicker-buttonpane { clear:left; }
+.ui-datepicker-row-break { clear:both; width:100%; }
+
+/* RTL support */
+.ui-datepicker-rtl { direction: rtl; }
+.ui-datepicker-rtl .ui-datepicker-prev { right: 2px; left: auto; }
+.ui-datepicker-rtl .ui-datepicker-next { left: 2px; right: auto; }
+.ui-datepicker-rtl .ui-datepicker-prev:hover { right: 1px; left: auto; }
+.ui-datepicker-rtl .ui-datepicker-next:hover { left: 1px; right: auto; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane { clear:right; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane button { float: left; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current { float:right; }
+.ui-datepicker-rtl .ui-datepicker-group { float:right; }
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+
+/* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
+.ui-datepicker-cover {
+    display: none; /*sorry for IE5*/
+    display/**/: block; /*sorry for IE5*/
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -4px; /*must have*/
+    left: -4px; /*must have*/
+    width: 200px; /*must have*/
+    height: 200px; /*must have*/
+}
+
+/*	caracteristicas gerais  __________________________________________ */
+
+
+ul.cssMenu { margin:0px 0 0 0; }
+ul.cssMenu ul{display:none; z-index:5000; }		 		/* esconde os submenus  */
+ul.cssMenu li:hover>ul{display:block;z-index:5000;} /* empilha os elementos do menu vertical  */
+
+ul.cssMenu ul{position: absolute;left:98%;top:-1px;} 		/*  -  */
+ul.cssMenu ul ul{position: absolute;left:98%;top:-2px;}		/*  -  */
+
+ul.cssMenu, ul.cssMenu ul {
+ 							/*  margen geral em torno do menu  */
+	list-style:none;	 						/* esconde os marcadores da lista  */
+	padding:1px 1px 0px 1px;	 			/* espaco interno entre o ul e os li - podefazer efeitos de borda  */
+	background-color:#000; 			/* cor da borda dos menus  */
+	background-image:url();	 /* caminho  */	 			/* imagem para fundo do menu - padrao vazia  */
+	min-width:200px;	 							/* largura do ul geral do menu */
+	
+}
+
+/*	caracteristicas dos submenus  ________________________________________ */
+
+ul.cssMenu ul {
+
+	margin-left: 2px;
+	z-index:2;
+	border: 0px solid red;	
+	
+}
+
+ul.cssMenu li {
+	display:block;								/* empilha os elementos do menu vertical  */
+	margin:0px 0px 0px 0px;				/* espaco interno entre os li e o ul - pode fazer efeitos de borda  */
+	border-bottom: 1px solid #475639;
+	/*top: -1px;*/
+	z-index:2;
+		height:auto;
+}
+
+ul.cssMenu li li {
+	/*border: 1px solid #475639;*/
+	margin:0px;				/* espaco interno entre os li e o ul - pode fazer efeitos de borda  */
+	/**top: -1px;*/
+	z-index:2;
+
+
+}
+
+ul.cssMenu li li a {
+	background-image:none;
+	margin:0px 0px 0px 0px;				/* espaco interno entre os li e o ul - pode fazer efeitos de borda  */
+}
+
+ul.cssMenu a:active, ul.cssMenu a:focus {
+	outline-style:none;						/* retira a linha sublinhada dos links  */
+}
+
+ul.cssMenu a, ul.cssMenu li.dis a:hover, ul.cssMenu li.sep a:hover {
+	display:block;								/* empilha os elementos do menu vertical  */
+	vertical-align:middle;					/* posiciona verticalmente o texto na metade  */
+	background-color:#e9f0e9;				/* cor do fundo dos menus  */
+	/*border-bottom: 1px solid #475639;*/ 			/* borda no menu - no padrao e gerada pelo padding  */
+	text-align:left;							/* alinhamento do texto - padrao esquerda  */
+	text-decoration:none;					/* retira a linha sublinhada dos links  */
+	padding:10px;								/* espaço interno - faz a altura dos menus  */
+	padding-left:0;							/*  -  */
+	font-size:12px;							/* tamanho da fonte quando selecionado  */
+	color: #000;						/*  cor da fonte do menu  */
+	/* cursor:default;							 -  */
+	/*background-image:url(../images/arrow_sub5.gif);*/	/* caminho  */	 			/* imagem para fundo do menu - padrao vazia  */
+	background-position: right center;	/* alinhamento h | v  */
+	background-repeat: no-repeat;		/* sem repetição  */
+	padding-left:20px; /*aqui altera a distância entre a seta e o texto*/
+
+}
+
+ul.cssMenu ul li {	float:none; }			/*  -  */
+
+ul.cssMenu ul a {
+	text-align:left;							/* alinhamento do texto no link - padrao esquerda  */
+	white-space:nowrap;					/* espaço em branco - sem quebra  */
+}
+
+ul.cssMenu li.sep {
+	text-align:left;							/*  -  */
+	padding:0px;								/*  -  */
+	line-height:0;								/*  -  */
+}
+
+ul.cssMenu li.sep span {
+	float:none;									/*  -  */
+	padding-right:0;							/*  -  */
+	width:100%;								/*  -  */
+	height:3px;									/*  -  */
+	display:inline-block;						/*  -  */
+	background-color:#0F3F6F;			/*  -  */
+}
+
+ul.cssMenu li:hover { position:relative; }	/*  -  */
+
+ul.cssMenu li:hover>a {
+	background-color:#475639;		/* cor do fundo over */
+	font-size:12px;						/* tamanho da fonte quando selecionado  */
+	color: #fff;						/* cor da fonte over */
+	text-decoration:none;
+}
+
+ul.cssMenu li a:hover {
+	position:relative;
+	background-color:#475639;		/* cor do fundo over */
+	font-size:12px;						/* tamanho da fonte quando selecionado  */
+	color: #fff;						/* cor da fonte over */
+	text-decoration:none;
+	}
+
+/*	setas em imagens  __________________________________________ */
+
+ul.cssMenu span {
+	display:block;								/* empilha os elementos na vertical  */
+	background-image:url(../images/arrow_sub5.gif);	/* caminho  */
+	background-position: right center;	/* alinhamento h | v  */
+	background-repeat: no-repeat;		/* sem repetição  */
+}
+
+ul.cssMenu li:hover>a>span { background-image:url(../images/arrow_sub4.gif);}	/* 1º nivel caminho  */
+ul.cssMenu a:hover span{ background-image:url(../images/arrow_sub5.gif)}		/* 1º nivel caminho  */
+ul.cssMenu ul span, ul.cssMenu a:hover table span {background-image:url(../images/arrow_sub5.gif)}/* 2º nivel  */
+ul.cssMenu ul li:hover > a span{ background-image:url(../images/arrow_sub4.gif);} /* 2º nivel caminho  */
+
+/*	caracteristicas para IE 6  __________________________________________ */
+
+ul.cssMenu table {border-collapse:collapse}	/*  -  */
+ul.cssMenu {
+	display:block; 							/* empilha os elementos do menu vertical  */
+	zoom:1;									/* -  */
+	width:116.55000000000001px;	/* -  */
+	float: left;								/* -  */
+	width:200px;	 						/* largura do ul geral do menu */
+}
+
+ul.cssMenu a:hover img.over, ul.cssMenu a:hover ul img.def, ul.cssMenu a:hover a:hover ul img.def, ul.cssMenu a:hover a:hover a:hover ul img.def, ul.cssMenu a:hover a:hover img.over, ul.cssMenu a:hover a:hover a:hover img.over, ul.cssMenu a:hover a:hover a:hover a:hover img.over {display:inline} /* -  */
+
+ul.cssMenu a:hover img.def, ul.cssMenu a:hover ul img.over, ul.cssMenu a:hover a:hover ul img.over, ul.cssMenu a:hover a:hover a:hover ul img.over, ul.cssMenu a:hover a:hover img.def, ul.cssMenu a:hover a:hover a:hover img.def, ul.cssMenu a:hover a:hover a:hover a:hover img.def {display:none} /* -  */
+
+ul.cssMenu a:hover ul, ul.cssMenu a:hover a:hover ul, ul.cssMenu a:hover a:hover a:hover ul {display:block}
+ul.cssMenu a:hover ul ul, ul.cssMenu a:hover a:hover ul ul {display:none} /* -  */
+
+/*___________________________ menu perfis quem é você __________________________________*/
+
+#barra_qv { background: url(../images/fundos/bg_qv.png) no-repeat; z-index:2000; width:220px; height:41px; margin: 15px 0 0 0; }
+
+
+ul.cssMenu_qv ul {
+	width:216px; 								/* largura dos ul dos submenus  */
+	z-index:99999;
+	border:2px solid #8DA871;
+	margin-left:1px;
+}
+
+ul.cssMenu_qv ul li a:hover {
+	position:relative;
+	background-color:#2E3724; /* cor do fundo over */
+	font-size:13px;			/* tamanho da fonte quando selecionado  */
+	color: #FFFFFF;			/* cor da fonte over */
+	text-decoration:none;
+	
+}
